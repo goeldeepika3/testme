@@ -1,6 +1,0 @@
-sections:
-  - id: studyplan
-    title: Study Plan
-landingUrl: /studyplan/biochemistry/session-1
-studyPlan:
-  enableMakeUpSessions: 'false'
