@@ -1,0 +1,16 @@
+sections:
+  - id: studyplan
+    title: Practice Test
+studyPlan:
+  lessonLayout:
+    overrides:
+      - lessonId:
+          - gettingStarted
+        sections:
+          header:
+            type: image-banner
+            imageCdnUrl: /images/gre-free-practice-test.svg
+            altText: 'Take this practice test online, then get your score as well as answers and explanations.'
+          body: '<assignment-list></assignment-list>'
+landingUrl: /studyplan
+productTitleOverride: Practice Test

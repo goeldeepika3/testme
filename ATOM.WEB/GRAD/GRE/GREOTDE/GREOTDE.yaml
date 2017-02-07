@@ -1,0 +1,15 @@
+sections:
+  - id: studyplan
+    title: Study Plan
+studyPlan:
+  lessonLayout:
+    overrides:
+      - lessonId:
+          - prometric
+        sections:
+          header:
+            type: image-banner
+            imageCdnUrl: /images/gre-prometric.svg
+            altText: 'Experience Test Day without the pressure. Reserve a seat with Prometric now to take this test in an official Prometric test center, then get your Kaplan Smart Reports.'
+          body: '<prometric-assignment-list></prometric-assignment-list>'
+landingUrl: /studyplan/prometric

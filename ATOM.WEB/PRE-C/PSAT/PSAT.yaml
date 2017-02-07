@@ -1,0 +1,79 @@
+sections:
+  - id: studyplan
+    title: Study Plan
+  - id: practice
+    title: 'Practice & Applications'
+studyPlan:
+  enableMakeUpSessions: 'false'
+  lessonLayout:
+    overrides:
+      - lessonId:
+          - gettingStarted
+        sections:
+          header:
+            type: image-banner
+            imageCdnUrl: /images/psat-get-started.svg
+            altText: Welcome to your PSAT course. Please use the videos below to get started and learn about the exam.
+          body: '<assignment-list></assignment-list>'
+      - lessonId:
+          - diagnostic
+          - practiceTest2
+          - classSessions.diagnostic
+          - classSessions.practiceTest2
+        sections:
+          header:
+            type: image-banner
+            imageCdnUrl: /images/psat-practice-test.svg
+            altText: 'Choose how to take this Practice Test: Take the test on paper and enter your answers online, or take the entire test online on your own.'
+          body: '<collapsible-assignment-list></collapsible-assignment-list>'
+practice:
+  practiceSection:
+    title: Practice
+  appsSection:
+    title: My Applications
+  assignmentFilter:
+    title: Filters
+    hiddenItems:
+      - gettingStarted
+      - diagnostic
+      - practiceTest2
+      - afterClass
+      - practiceTests
+      - live-orientation-session
+      - collegeBoardTests
+      - collegeBoardTest1
+    formatFiltersWhiteList:
+      - id: format-teach-me
+        title: Teach Me
+        type: format
+        filters:
+          - id: video.atom
+            title: Video
+      - id: format-test-me
+        title: Test Me
+        type: format
+        filters:
+          - id: test.quiz
+            title: Quiz
+recommendations:
+  recommedationsGroups:
+    - prerequisites:
+        - uri: main/PSAT2015/assessments/pracTests/psat16OPT1
+      triggers:
+        - uri: main/PSAT2015/assessments
+    - prerequisites:
+        - uri: main/PSAT2015/assessments/pracTests/psat16WGPT1
+      triggers:
+        - uri: main/PSAT2015/assessments
+    - prerequisites:
+        - uri: main/PSAT2015/assessments/pracTests16/psat16PT1Grid
+      triggers:
+        - uri: main/PSAT2015/assessments
+        - uri: main/PSAT2015/quizzes/
+    - prerequisites:
+        - uri: main/PSAT2015/assessments/pracTests16/psat16PT1Online
+      triggers:
+        - uri: main/PSAT2015/assessments
+        - uri: main/PSAT2015/quizzes/
+  incompletePrerequisitesMessage: 'Completing <a href="studyplan/classSessions/diagnostic" target="_self">Practice Test 1</a> will generate recommended assignments based on your performance. '
+landingUrl: /studyplan/gettingStarted

@@ -1,0 +1,6 @@
+sections:
+  - id: studyplan
+    title: Study Plan
+  - id: assignment
+    title: QBank
+    url: /assignment/jasper/test.qbank/start?path=main%2Flsat2016%2Fqbank%2Flsat2016SmallQbankShell&title=Qbank:%20Create%20or%20Review%20a%20Mastery%20assignment&extension=jasper-product-code%3DLSAT2016QB

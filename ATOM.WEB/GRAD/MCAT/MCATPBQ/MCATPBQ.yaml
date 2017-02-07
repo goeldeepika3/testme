@@ -1,0 +1,19 @@
+sections:
+  - id: practice
+    title: MCAT Passage-Based Questions
+landingUrl: '/practice'
+practice:
+  practiceSection:
+    title: MCAT Passage-Based Questions
+  assignmentFilter:
+    hiddenItems: []
+    formatFiltersWhiteList:
+      - id: format-teach-me
+        title: Teach Me
+        type: format
+        filters: []
+      - id: format-test-me
+        title: Test Me
+        type: format
+        filters: []
+recommendations: []

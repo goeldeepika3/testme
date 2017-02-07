@@ -1,0 +1,194 @@
+landingUrl: /studyplan/gettingStarted
+sections:
+  - id: studyplan
+    title: Study Plan
+  - id: practice
+    title: More Resources
+studyPlan:
+  lessonLayout:
+    overrides:
+      - lessonId:
+          - gettingStarted
+          - getStarted
+        sections:
+          header:
+            type: image-banner
+            imageCdnUrl: /images/mcat-get-started.svg
+            altText: "Welcome to the Get Started page. On this page, you'll find links to to the following items: a 7-minute Orientation Video, a 4-hour Diagnostic Exam, and a series of six 20-minute Science Assessments."
+          body: '<assignment-list></assignment-list>'
+      - lessonId:
+          - full-length-3.aamc
+          - aamc
+        sections:
+          header:
+            type: image-banner
+            imageCdnUrl: /images/mcat-aamc.svg
+            altText: "The AAMC has released over 1000 questions worth of practice material to help students prepare for the test. This practice includes one full-length Sample Test, six subject-focused Question Packs, and digital versions of the questions in the AAMC's Official Guide to the MCAT Exam."
+          body: '<aamc-assignment-list></aamc-assignment-list>'
+      - lessonId:
+          - unit2.full-length-1
+          - foundations.foundationsBehSci
+          - foundations.foundationsBioChem
+          - full-length-exam.full-length-1
+          - practiceTests.fullLengths
+        sections:
+          header:
+            type: text-banner
+          body: '<assignment-list></assignment-list>'
+      - lessonId:
+          - channel
+        sections:
+          header:
+            type: image-banner
+            imageCdnUrl: /images/mcat-channel.svg
+            altText: "THE MCAT CHANNEL: Live, online workshops 6 days a week. Episodes reviewing science content & test strategy. Get a head start even before your first class session."
+          body: '<assignment-list></assignment-list>'
+      - lessonId:
+          - qbank
+        sections:
+          header:
+            type: image-banner
+            imageCdnUrl: /images/mcat-qbank.svg
+            altText: "THE MCAT QBANK: Create custom quizzes. Hundreds of practice questions for every test section. Review explanations & track performance over time."
+          body: '<collapsible-assignment-list></collapsible-assignment-list>'
+practice:
+  practiceSection:
+    title: More Resources
+  assignmentFilter:
+    hiddenItems:
+      - gettingStarted
+      - full-length-1
+      - full-length-2
+      - full-length-3
+      - full-length-4
+      - full-length-5
+      - full-length-tests
+      - kaplan-full-lengths
+      - aamc-sample-test
+      - aamc
+      - sectionTests
+      - practiceTests
+      - foundations
+      - foundationsBioChem
+      - foundationsBehSci
+      - fullLengths
+      - qbank
+      - qbankA
+      - channel
+      - channelA
+    formatFiltersWhiteList:
+      - id: format-teach-me
+        title: Teach Me
+        type: format
+        filters:
+          - id: reading.quiz
+            title: Chapter Quiz
+          - id: video.interactive
+            title: Interactive Video
+      - id: format-test-me
+        title: Test Me
+        type: format
+        filters:
+          - id: test.quiz
+            title: Quiz
+channel:
+  loadMoreUpcomingSessionsDaysThreshold: 7
+  maximumNextUpSessions: 2
+  channelStartDate: ''
+  upcomingSessionsUrl: ''
+  recordedSessionsUrl: ''
+  title: 'The <strong>MCAT</strong> Channel'
+  logoCdnUrl: /images/mcat-channel-logo.svg
+  minutesBeforeSessionEnabled: 15
+  bio:
+    numberOfYearsTeachingTitle: 'Years Teaching MCAT:'
+    numberOfStudentsTaughtTitle: 'SAT Students Taught:'
+  # loadBios: false
+  # loadChannelStatus: false
+  themes:
+    - color: 'rgba(102,51,153,0.9)'
+      backgroundImageCdnUrl: /images/mcat-channel-bg1.jpg
+    - color: 'rgba(229,46,50,0.9)'
+      backgroundImageCdnUrl: /images/mcat-channel-bg1.jpg
+    - color: 'rgba(255,204,0,0.9)'
+      backgroundImageCdnUrl: /images/mcat-channel-bg1.jpg
+    - color: 'rgba(102,51,153,0.9)'
+      backgroundImageCdnUrl: /images/mcat-channel-bg1.jpg
+    - color: 'rgba(229,46,50,0.9)'
+      backgroundImageCdnUrl: /images/mcat-channel-bg2.jpg
+    - color: 'rgba(255,204,0,0.9)'
+      backgroundImageCdnUrl: /images/mcat-channel-bg2.jpg
+    - color: 'rgba(102,51,153,0.9)'
+      backgroundImageCdnUrl: /images/mcat-channel-bg3.jpg
+    - color: 'rgba(229,46,50,0.9)'
+      backgroundImageCdnUrl: /images/mcat-channel-bg3.jpg
+    - color: 'rgba(255,204,0,0.9)'
+      backgroundImageCdnUrl: /images/mcat-channel-bg3.jpg
+    - color: 'rgba(102,51,153,0.9)'
+      backgroundImageCdnUrl: /images/mcat-channel-bg4.jpg
+    - color: 'rgba(229,46,50,0.9)'
+      backgroundImageCdnUrl: /images/mcat-channel-bg4.jpg
+    - color: 'rgba(255,204,0,0.9)'
+      backgroundImageCdnUrl: /images/mcat-channel-bg4.jpg
+    - color: 'rgba(102,51,153,0.9)'
+      backgroundImageCdnUrl: /images/mcat-channel-bg5.jpg
+    - color: 'rgba(229,46,50,0.9)'
+      backgroundImageCdnUrl: /images/mcat-channel-bg5.jpg
+    - color: 'rgba(255,204,0,0.9)'
+      backgroundImageCdnUrl: /images/mcat-channel-bg5.jpg
+    - color: 'rgba(102,51,153,0.9)'
+      backgroundImageCdnUrl: /images/mcat-channel-bg6.jpg
+    - color: 'rgba(229,46,50,0.9)'
+      backgroundImageCdnUrl: /images/mcat-channel-bg6.jpg
+    - color: 'rgba(255,204,0,0.9)'
+      backgroundImageCdnUrl: /images/mcat-channel-bg6.jpg
+  recordedSessionsOrder: subjects
+  filterGroups:
+    - id: subjects
+      title: Subjects
+      format: select-all
+      props:
+        - name
+        - imageUrl
+      imagePath: /MCAT/Channel/SubjectIcons/filters/
+      order:
+        - id: 0
+          name: Behavioral Sciences
+        - id: 1
+          name: Biochemistry and Molecular Biology
+        - id: 2
+          name: Biology
+        - id: 3
+          name: CARS
+        - id: 4
+          name: General Chemistry
+        - id: 5
+          name: Physics
+        - id: 6
+          name: Study Strategy
+        - id: 7
+          name: Test Review
+    - id: instructors
+      title: Teachers
+      format: select-all
+      hide:
+        - Special Guest
+      props:
+        - name
+        - imageUrl
+      order:
+        - id: 1000
+          name: Special Guest
+recommendations:
+  recommedationsGroups:
+    - prerequisites:
+        - uri: main/MCAT/practicetests/diag/mc15Diag
+        - uri: main/MCAT/practicetests/scienceasses/mcatSciAssesment15
+      triggers:
+        - uri: main/MCAT/practicetests
+    - prerequisites:
+        - uri: main/MCAT/assessments/getStart/mc15Diag
+        - uri: main/MCAT/assessments/getStart/mcatSciAssesment15
+      triggers:
+        - uri: main/MCAT/assessments
+  incompletePrerequisitesMessage: 'To get recommendations of the most valuable assignments based on your performance, please complete the Diagnostic & Science Assessments in the <a href="/studyplan/gettingStarted" target="_self">Get Started</a> section of your Study Plan.'

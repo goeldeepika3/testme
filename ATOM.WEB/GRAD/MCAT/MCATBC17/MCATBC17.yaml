@@ -1,0 +1,17 @@
+sections:
+  - id: studyplan
+    title: Study Plan
+landingUrl: /studyplan/gettingStarted
+productTitleOverride: MCAT Biochemistry Review
+studyPlan:
+  lessonLayout:
+    overrides:
+      - lessonId:
+          - gettingStarted
+          - getStarted
+        sections:
+          header:
+            type: image-banner
+            imageCdnUrl: /images/online-companion-get-started.svg
+            altText: "Welcome to the Get Started page. On this page, you'll find links to to the following items: a 7-minute Orientation Video, a 4-hour Diagnostic Exam, and a series of six 20-minute Science Assessments."
+          body: '<assignment-list></assignment-list>'

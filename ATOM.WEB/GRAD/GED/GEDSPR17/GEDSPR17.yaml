@@ -1,0 +1,18 @@
+productTitleOverride: GED Strategies, Practice & Review
+sections:
+  - id: studyplan
+    title: Study Plan
+landingUrl: studyplan/gettingStarted
+studyPlan:
+  enableMakeUpSessions: 'true'
+  lessonLayout:
+    overrides:
+      - lessonId:
+          - gettingStarted
+          - getStarted
+        sections:
+          header:
+            type: image-banner
+            imageCdnUrl: /images/online-companion-get-started.svg
+            altText: 'Welcome to your Kaplan online resources.'
+          body: '<assignment-list></assignment-list>'

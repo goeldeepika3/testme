@@ -1,0 +1,12 @@
+productTitleOverride: MCAT Summer Intensive Program
+sections:
+  - id: studyplan
+    title: Study Plan
+  - id: practice
+    title: More Resources
+  - id: channel
+    title: channel
+  - id: assignment
+    title: Qbank
+    url: assignment/jasper/test.qbank/start?path=main%2FMCAT%2Fqbank%2FmcatQbank2015Shell&title=Create%20Test&extension=jasper-product-code%3DMCAT15AtomQbank
+

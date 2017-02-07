@@ -1,0 +1,15 @@
+sections:
+  - id: studyplan
+    title: Study Plan
+studyPlan:
+  lessonLayout:
+    overrides:
+      - lessonId:
+          - gettingStarted
+        sections:
+          header:
+            type: image-banner
+            imageCdnUrl: /images/ielts-get-started.svg
+            altText: Welcome to your IELTS Course. Please watch the videos below to get started and learn about the exam.
+          body: '<assignment-list></assignment-list>'
+landingUrl: /studyplan/gettingStarted

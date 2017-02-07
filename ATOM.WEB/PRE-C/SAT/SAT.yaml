@@ -1,0 +1,217 @@
+sections:
+  - id: studyplan
+    title: Study Plan
+  - id: practice
+    title: 'Practice & Applications'
+landingUrl: /studyplan/gettingStarted
+studyPlan:
+  enableMakeUpSessions: 'false'
+  lessonLayout:
+    overrides:
+      - lessonId:
+          - gettingStarted
+          - getStarted
+        sections:
+          header:
+            type: image-banner
+            imageCdnUrl: /images/sat-get-started.svg
+            altText: Welcome to your SAT course. Please watch the videos below to get started and learn about the exam.
+          body: '<assignment-list></assignment-list>'
+      - lessonId:
+          - unit1
+          - unit1.diagnostic
+          - unit1.practiceTest3
+        sections:
+          header:
+            type: image-banner
+            imageCdnUrl: /images/sat-pt-onsite.svg
+            altText: 'Choose how to take this Practice Test: Take test on paper and enter answers online, or take the test online.'
+          body: '<collapsible-assignment-list></collapsible-assignment-list>'
+      - lessonId:
+          - unit1
+          - unit1.practiceTest2
+          - unit1.practiceTest4
+        sections:
+          header:
+            type: image-banner
+            imageCdnUrl: /images/sat-pt-proctored.svg
+            altText: Take this Practice Test by scheduling and attending a Live Online Proctoring Session then entering your answers in an online bubble grid to get your score and Smart Report.
+          body: '<collapsible-assignment-list></collapsible-assignment-list>'
+      - lessonId:
+          - sat-channel
+        sections:
+          header:
+            type: image-banner
+            imageCdnUrl: /images/sat-channel.svg
+            altText: 'The SAT Channel offers elective instruction for everyone, anytime, anywhere. Choose what and how much to watch. View episodes and recordings at every skill level and for every test section. No preregistration required.'
+          body: '<assignment-list></assignment-list>'
+      - lessonId:
+          - sat-qbank
+        sections:
+          header:
+            type: image-banner
+            imageCdnUrl: /images/sat-qbank.svg
+            altText: 'SAT Quiz Bank: Choose your question topics, take over 250 questions, review the explanations, and track your cumulative performance.'
+          body: '<assignment-list></assignment-list>'
+      - lessonId:
+          - collegeBoardTests
+          - collegeBoardTests.collegeBoardTest1
+          - collegeBoardTests.collegeBoardTest2
+          - collegeBoardTests.collegeBoardTest3
+          - collegeBoardTests.collegeBoardTest4
+        sections:
+          header:
+            type: image-banner
+            imageCdnUrl: /images/sat-pt-college-board.svg
+            altText: 'To take advantage of this Official Practice and Expert Explanations, you can either take the entire test at once to receive your score, or take sections individually for quick practice and section-level scores.'
+          body: '<collapsible-assignment-list></collapsible-assignment-list>'
+practice:
+  practiceSection:
+    title: Practice
+  appsSection:
+    title: My Applications
+  assignmentFilter:
+    title: Filters
+    hiddenItems:
+      - gettingStarted
+      - diagnostic
+      - practiceTest2
+      - practiceTest3
+      - practiceTest4
+      - practice-test-2
+      - practice-test-4
+      - afterClass
+      - practiceTests
+      - classSessions
+      - live-orientation-session
+      - satDiagnostic
+      - unit5
+      - satPracticeTest1
+      - satPracticeTest2
+      - satPracticeTest3
+      - satPracticeTest4
+      - mathFoundations
+      - arithmetic
+      - algebra
+      - geometry
+      - collegeBoardTests
+      - collegeBoardTest1
+      - collegeBoardTest2
+      - collegeBoardTest3
+      - collegeBoardTest4
+      - act-extras
+      - act-reading
+      - act-math
+      - act-english
+      - act-practice-test-a
+      - act-practice-test-b
+      - act-practice-test-c
+      - act-practice-test-d
+      - sat-channel
+      - sat-qbank      
+    formatFiltersWhiteList:
+      - id: format-teach-me
+        title: Teach Me
+        type: format
+        filters:
+          - id: video.atom
+            title: Video
+          - id: practice.guided
+            title: Guided Practice
+      - id: format-test-me
+        title: Test Me
+        type: format
+        filters:
+          - id: test.quiz
+            title: Quiz
+channel:
+  loadMoreUpcomingSessionsDaysThreshold: 7
+  maximumNextUpSessions: 2
+  channelStartDate: ''
+  upcomingSessionsUrl: ''
+  recordedSessionsUrl: ''
+  title: 'The <strong>SAT</strong> Channel'
+  logoCdnUrl: /images/sat-channel-logo.svg
+  minutesBeforeSessionEnabled: 15
+  bio:
+    numberOfYearsTeachingTitle: 'Years Teaching SAT:'
+    numberOfStudentsTaughtTitle: 'SAT Students Taught:'
+  themes:
+    - color: '#2BADD9'
+      backgroundImageCdnUrl: /images/sat-channel-bg1.jpg
+    - color: '#2BADD9'
+      backgroundImageCdnUrl: /images/sat-channel-bg2.jpg
+    - color: '#2BADD9'
+      backgroundImageCdnUrl: /images/sat-channel-bg3.jpg
+  recordedSessionsOrder: subjects
+  filterGroups:
+    - id: subjects
+      title: Subjects
+      format: select-all
+      props:
+        - name
+        - imageUrl
+      imagePath: /SAT/Channel/SubjectIcons/filters/
+      order:
+        - id: 0
+          name: Reading
+        - id: 1
+          name: Math
+        - id: 2
+          name: Cross-Test
+        - id: 3
+          name: Essay
+        - id: 4
+          name: Study Skills
+        - id: 5
+          name: Test Review
+        - id: 6
+          name: Proctored Test
+    - id: difficulty
+      title: Rating
+      format: select-all
+      props:
+        - name
+        - imageUrl
+      order:
+        - id: 0
+          name: Foundations
+        - id: 1
+          name: For Everyone
+        - id: 2
+          name: Advanced
+      imagePath: /SAT/Channel/SubjectIcons/filters/
+    - id: instructors
+      title: Teachers
+      format: select-all
+      hide:
+        - TBD
+      props:
+        - name
+        - imageUrl
+      order:
+        - id: 1000
+          name: Special Guest
+recommendations:
+  recommedationsGroups:
+    - prerequisites:
+        - uri: main/SAT2016/assesments/pracTests16/sat16PT1Online
+      triggers:
+        - uri: main/SAT2016/assesments
+    - prerequisites:
+        - uri: main/SAT2016/assesments/pracTests16/sat16PT1WebGrid
+      triggers:
+        - uri: main/SAT2016/assesments
+    - prerequisites:
+        - uri: main/SAT2016/assesments/pracTests/sat15wgto01
+      triggers:
+        - uri: main/SAT2016/assesments
+    - prerequisites:
+        - uri: main/SAT2016/assesments/pracTests/sat15ptto01
+      triggers:
+        - uri: main/SAT2016/assesments
+    - prerequisites:
+        - uri: main/SAT2016/assesments/pracTests/sat15sc01
+      triggers:
+        - uri: main/SAT2016/assesments
+  incompletePrerequisitesMessage: 'Completing <a href="/studyplan/unit1/diagnostic" target="_self">Practice Test 1</a> will generate recommended assignments based on your performance. '

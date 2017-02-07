@@ -1,0 +1,47 @@
+sections:
+  - id: studyplan
+    title: Study Plan
+studyPlan:
+  lessonLayout:
+    overrides:
+      - lessonId:
+          - gettingStarted
+        sections:
+          header:
+            type: image-banner
+            imageCdnUrl: /images/nclex-get-started.svg
+            altText: 'Welcome to your Kaplan Online Resources!'
+          body: '<assignment-list></assignment-list>'
+practice:
+  practiceSection:
+    title: More Resources
+  assignmentFilter:
+    hiddenItems:
+      - gettingStarted
+      - phaseOneOrientation
+      - diagnosticExam
+      - essentialNursingContent
+      - phaseTwo
+      - phaseTwoOrientation
+      - session1
+      - session2
+      - session3
+      - session4
+      - session5
+      - session6
+      - session7
+      - session8
+      - phaseThreeOrientation
+      - qbank
+      - sampleTests
+      - readiness
+videoLibrary:
+  assignmentFilters:
+    lesson:
+      - readiness
+      - phaseThree.readiness
+    format:
+      - video.atom
+    importance:
+      - practice
+landingUrl: /studyplan/gettingStarted

@@ -1,0 +1,15 @@
+productTitleOverride: "GMAT Practice Pack PLUS"
+sections:
+  - id: studyplan
+    title: Study Plan
+landingUrl: /studyplan/resources
+studyPlan:
+  lessonLayout:
+    overrides:
+      - lessonId:
+          - resources
+        sections:
+          header:
+            type: image-banner
+            imageCdnUrl: /images/online-companion-get-started.svg
+          body: '<assignment-list></assignment-list>'

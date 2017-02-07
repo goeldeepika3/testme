@@ -1,0 +1,39 @@
+sections:
+  - id: studyplan
+    title: Study Plan
+  - id: practice
+    title: More Resources
+footer:
+  links:
+    - title: Corporate Programs
+      url: 'http://www.kaptest.com/Corporate-Programs/index.html'
+      target: _blank
+    - title: Press/Media
+      url: 'http://press.kaptest.com/'
+      target: _blank
+    - title: Work for Kaplan
+      url: 'http://www.kaptest.co.uk/course/careers-kaplan-test-prep'
+      target: _blank
+    - title: Privacy Policy
+      url: 'http://www.kaptest.co.uk/about/privacy-policy'
+      target: _blank
+    - title: Contact Us
+      url: 'http://www.kaptest.co.uk/content/contact-us'
+      target: _blank
+  contactTemplate: /app/productConfig/UKCATPI/footer/contactTemplate.html
+practice:
+  practiceSection:
+    title: Practice
+  assignmentFilter:
+    title: Filters
+    hiddenItems:
+      - gettingStarted
+      - practiceTests
+    formatFiltersWhiteList:
+      - id: format-teach-me
+        title: Teach Me
+        type: format
+        filters:
+          - id: video.lod
+            title: Video
+landingUrl: /studyplan/gettingStarted

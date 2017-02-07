@@ -1,0 +1,11 @@
+productTitleOverride: GRE Private Tutoring - Live Online
+sections:
+  - id: studyplan
+    title: Study Plan
+  - id: practice
+    title: Resources
+  - id: assignment
+    title: QBank
+    url: /assignment/jasper/test.qbank/start?path=main%2Fgre2015%2Fqbank%2Fgre2015QbankShell&title=Create%20Test&extension=jasper-product-code%3DGRE2015
+
+

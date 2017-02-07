@@ -1,0 +1,9 @@
+sections:
+  - id: studyplan
+    title: Study Plan
+  - id: channel
+    title: channel
+  - id: assignment
+    title: Qbank
+    url: assignment/jasper/test.qbank/start?path=main%2Flsat2016%2Fqbank%2Flsat2016LargeQbankShell&title=Create%20Test&extension=jasper-product-code%3DLSAT2016QBPlus
+landingUrl: /studyplan/gettingStarted

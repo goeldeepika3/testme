@@ -1,0 +1,25 @@
+landingUrl: /studyplan/gettingStarted
+sections:
+  - id: studyplan
+    title: Practice Test
+studyPlan:
+  enableMakeUpSessions: 'false'
+  lessonLayout:
+    overrides:
+      - lessonId:
+          - gettingStarted
+        sections:
+          header:
+            type: image-banner
+            imageCdnUrl: '/images/lsat-full.svg'
+            altText: "Take this practice test on paper, then enter your answers to get your score as well as correct answers and explanations."
+          body: '<assignment-list></assignment-list>'
+      - lessonId:
+          - coursePreview
+        sections:
+          header:
+            type: image-banner
+            imageCdnUrl: '/images/lsat-get-started.svg                			'
+            altText: "Take this practice test on paper, then enter your answers to get your score as well as correct answers and explanations."
+          body: '<assignment-list></assignment-list>'
+productTitleOverride: 'LSAT Practice Test'

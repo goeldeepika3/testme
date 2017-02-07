@@ -1,0 +1,137 @@
+sections:
+  - id: studyplan
+    title: Study Plan
+footer:
+  links:
+    - title: Corporate Programs
+      url: 'http://www.kaptest.com/Corporate-Programs/index.html'
+      target: _blank
+    - title: Work for Kaplan
+      url: 'http://www.kaplan.com/careersatkaplan/pages/kaplancareers.aspx'
+      target: _blank
+    - title: Press/Media
+      url: 'http://press.kaptest.com/'
+      target: _blank
+    - title: Teach for Kaplan
+      url: 'http://www.kaptest.com/Teach-for-Kaplan/Home/index.html'
+      target: _blank
+    - title: Contact Us
+      url: 'mailto:customer.care@kaplan.com'
+      target: ''
+    - title: 'Terms of Use & Privacy Notice'
+      url: 'http://www.kaptest.com/assets/content/popup/privacy-policy.html'
+      target: _blank
+    - title: California Privacy Policy
+      url: 'http://www.kaptest.com/assets/content/popup/california-privacy-policy.html'
+      target: _blank
+studyPlan:
+  enableMakeUpSessions: 'true'
+  sessionTotalTimeText: Total Time in This Session
+  sessionTotalAdditionalText: (Does not include class time)
+  sessionTimeRemainingText: Time Remaining in This Session
+  sessionTimeRemainingAdditionalText: (Does not include class time)
+  lessonLayout:
+    default:
+      sections:
+        header:
+          type: text-banner
+        body: '<collapsible-assignment-list></collapsible-assignment-list>'
+practice:
+  practiceSection:
+    title: Practice
+  appsSection:
+    title: My Applications
+  assignmentFilter:
+    title: Filters
+    hiddenItems: []
+    formatFiltersWhiteList:
+      - id: format-teach-me
+        title: Teach Me
+        type: format
+        filters:
+          - id: video.lod
+            title: Lesson on Demand Video
+          - id: video.interactive
+            title: Interactive Video
+          - id: video.atom
+            title: Video
+          - id: video.audio
+            title: Audio Recording
+          - id: video.jasper
+            title: Video
+          - id: reading.book
+            title: Book Assignment
+          - id: reading.pdf
+            title: PDF
+          - id: reading.workshop
+            title: Workshop
+          - id: guided.practice
+            title: Guided Practice
+      - id: format-test-me
+        title: Test Me
+        type: format
+        filters:
+          - id: test.passagebasedquestions
+            title: Passage-Based Questions Quiz
+          - id: test.quiz
+            title: Quiz
+          - id: test.diagnostic
+            title: Diagnostic Test
+          - id: test.section
+            title: Section Test
+          - id: test.webgrid
+            title: Online Answer Grid
+          - id: guided.practice
+            title: Guided Practice
+          - id: test.fulllength
+            title: Full Length Test
+          - id: test.workshop
+            title: Workshop
+channel:
+  baseSessionUrl: 'http://ktws.kaptest.com/adobe_student_landing.jhtml'
+landingUrl: /studyplan
+recommendations:
+  isEnabled: true 
+assignmentFormats:
+    - id: reading.book
+      title: 'Book Assignment'
+    - id: reading.pdf
+      title: PDF
+    - id: video.jasper
+      title: Video
+    - id: video.lod
+      title: 'Lesson on Demand Video'
+    - id: video.interactive
+      title: 'Interactive Video'
+    - id: video.atom
+      title: Video
+    - id: video.mcatchannel
+      title: 'Channel Session Recording'
+    - id: video.audio
+      title: 'Audio Recording'
+    - id: test.workshop
+      title: 'Review Notes'
+    - id: reading.workshop
+      title: 'Review Notes'
+    - id: test.passagebasedquestions
+      title: 'Passage Based Questions'
+    - id: test.quiz
+      title: Quiz
+    - id: reading.quiz
+      title: Quiz
+    - id: test.fulllength
+      title: 'Full Length Test'
+    - id: test.diagnostic
+      title: 'Diagnostic Test'
+    - id: test.qbank
+      title: 'Qbank Test'
+    - id: test.section
+      title: 'Section Test'
+    - id: test.webgrid
+      title: 'Online Bubble Grid'
+    - id: practice.guided
+      title: 'Guided Practice'
+    - id: link.external
+      title: Link
+    - id: link.schedule
+      title: Schedule
