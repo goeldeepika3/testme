@@ -3,11 +3,11 @@ let path = require('path');
 let parse = require('./parse');
 
 let app = express();
-let filePath = process.cwd() + '/GADGETS.yaml';
+let productConfigFolder = process.cwd() + '/ATOM.WEB';
 
 app.set('port', (process.env.PORT || 3000));
 app.use('/set', function (req, res, send) {
-   let val= parse.load(process.cwd());
+    let val = parse.load(productConfigFolder);
     res.send(val);
 });
 
