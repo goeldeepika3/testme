@@ -1,2 +1,4 @@
 node_modules/
-ATOM.WEB/
+prod/
+*.csv
+.DS_Store
