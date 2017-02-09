@@ -7,10 +7,6 @@ let app = express();
 let productConfigFolder = process.cwd() + '/prod/ATOM.WEB';
 
 app.set('port', (process.env.PORT || 3000));
-app.use('/set', function (req, res, send) {
-    let val = parse.load(productConfigFolder);
-    res.send(val);
-});
 
 app.use('/list', function (req, res, send) {
     let files = parse.list(productConfigFolder);
