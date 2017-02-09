@@ -8,6 +8,14 @@ function getFiles(folder) {
     const files = walkSync(folder);
     let allFiles = [];
     files.forEach(function (file) {
+        if (file.toLowerCase().indexOf('backup') !== -1) {
+            //   console.log(file);
+            return;
+        }
+        if (file.toLowerCase().indexOf('xktp') !== -1) {
+            //console.log(file);
+            return;
+        }
         let fullPath = `${folder}/${file}`;
         allFiles.push(fullPath);
     });
@@ -47,40 +55,46 @@ function getLandingUrl(fileContent) {
     return fileContent.landingUrl;
 }
 exports.v2 = function (folder) {
-    let data = `location,isFile,currentLandingUrl,defaultLesson,newLandingUrl\r\n`
+    let data = `location,currentLandingUrl,defaultLesson,newLandingUrl\r\n`
     const files = getFiles(folder);
     files.forEach(function (file) {
         const location = file;
         const isFile = fs.statSync(file).isFile();
+        if (!isFile) {
+            return;
+        }
         let landingUrl = undefined;
         let defaultLesson = undefined;
         let newLandingUrl = undefined;
-        let skip = false;
-        if (file.indexOf('KTP.yaml') !== -1) {
-            console.log('interest')
-        }
-        if (isFile) {
-            try {
-                var fileContent = yaml.safeLoad(fs.readFileSync(file, 'utf8'));
-                landingUrl = getLandingUrl(fileContent);
-                var regexMatchObj = regexMatchv2(fileContent);
-                if (regexMatchObj) {
-                    defaultLesson = regexMatchObj.defaultLesson;
-                    newLandingUrl = regexMatchObj.landingUrl;
-                } else {
-                    defaultLesson = 'N/A';
-                    newLandingUrl = 'N/A';
-                }
+        try {
+            var fileContent = yaml.safeLoad(fs.readFileSync(file, 'utf8'));
+            landingUrl = getLandingUrl(fileContent);
+            if (!landingUrl) {
+                return;
             }
-            catch (err) {
-                skip = true;
-                console.log(`skipped:${file}`)
+            var regexMatchObj = regexMatchv2(fileContent);
+            if (regexMatchObj) {
+                defaultLesson = regexMatchObj.defaultLesson;
+                newLandingUrl = regexMatchObj.landingUrl;
+            } else {
+                return;
             }
+            if (location.toLowerCase().indexOf('dat.yaml') !== -1) {
+                console.log('heyo');
+            }
+            fileContent.landingUrl = newLandingUrl;
+            if (fileContent.studyPlan == undefined) {
+                console.log(`skipped ${location}`);
+                return;
+            }
+            fileContent.studyPlan.defaultLesson = defaultLesson;
+            let xyz = yaml.safeDump(fileContent, { lineWidth: 100000 });
+            fs.writeFileSync(location, xyz);
+            data += `${location},${landingUrl},${defaultLesson},${newLandingUrl}\r\n`
         }
-        if (skip) {
-            return;
+        catch (err) {
+            console.log(`ignoring: ${file}`);
         }
-        data += `${location},${isFile},${landingUrl},${defaultLesson},${newLandingUrl}\r\n`
     });
     return data;
 }
